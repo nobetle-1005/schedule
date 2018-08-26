@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">1. Nöbetçi Doktor</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col">2. Nöbetçi Doktor</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col">3. Nöbetçi Doktor</th>    
+    
+          </tr>
+        </thead>
+        <tbody>
+            
+
+                    {% for i in liste  %}
+                    <tr>
+
+                            {% for j in i  %}
+                                    <td>{{j.0}}</td>
+                                    <td>{{j.1}}</td>
+                                    <td>{{j.2}}</td>
+                            {% endfor %}
+                        
+                    </tr> 
+                    {% endfor %}
+        </tbody>
+      </table>
+    
+
+
+
+
+
+         <!--<ol>
+        {% for i in liste  %}
+        <li>{{i.0}}-{{i.1}}-{{i.2}}</li>
+
+
+        {% endfor %}
+        </ol>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock body %}
+
+    
